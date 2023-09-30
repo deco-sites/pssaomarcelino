@@ -35,42 +35,28 @@ export interface Props {
   navItems?: NavItem[];
 
   /**
-   * @title Product suggestions
-   * @description Product suggestions displayed on search
-   */
-  products?: Product[] | null;
-
-  /**
    * @title Enable Top Search terms
    */
   suggestions?: Suggestion | null;
 
   /** @title Logo */
-  logo?: { src: ImageWidget; alt: string };
+  logo?: { src: ImageWidget; alt: string; width: number; height: number };
 }
 
 function Header({
   alerts,
-  searchbar: _searchbar,
-  products,
   navItems = [],
-  suggestions,
   logo,
 }: Props) {
-  const platform = usePlatform();
-  const searchbar = { ..._searchbar, products, suggestions };
-
   return (
     <>
       <header style={{ height: headerHeight }}>
         <Drawers
           menu={{ items: navItems }}
-          searchbar={searchbar}
-          platform={platform}
         >
           <div class="bg-base-100 fixed w-full z-50">
-            <Alert alerts={alerts} />
-            <Navbar items={navItems} searchbar={searchbar} logo={logo} />
+            {alerts.length > 0 && <Alert alerts={alerts} />}
+            <Navbar items={navItems} logo={logo} />
           </div>
         </Drawers>
       </header>
