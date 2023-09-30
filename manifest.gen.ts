@@ -49,8 +49,10 @@ const manifest = {
     "deco-sites/pssaomarcelino/sections/Images/ShoppableBanner.tsx": $$$$$$3,
     "deco-sites/pssaomarcelino/sections/Links/LinkTree.tsx": $$$$$$20,
     "deco-sites/pssaomarcelino/sections/Links/Shortcuts.tsx": $$$$$$21,
-    "deco-sites/pssaomarcelino/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$15,
-    "deco-sites/pssaomarcelino/sections/Miscellaneous/CookieConsent.tsx": $$$$$$16,
+    "deco-sites/pssaomarcelino/sections/Miscellaneous/CampaignTimer.tsx":
+      $$$$$$15,
+    "deco-sites/pssaomarcelino/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$16,
     "deco-sites/pssaomarcelino/sections/Newsletter/Newsletter.tsx": $$$$$$22,
     "deco-sites/pssaomarcelino/sections/Product/ProductDetails.tsx": $$$$$$14,
     "deco-sites/pssaomarcelino/sections/Product/ProductShelf.tsx": $$$$$$13,
