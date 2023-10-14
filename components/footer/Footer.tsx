@@ -118,47 +118,12 @@ function Footer({
     description: "",
     form: { placeholder: "", buttonText: "", helpText: "" },
   },
-  sections = [{
-    "label": "Sobre",
-    "items": [
-      {
-        "href": "/quem-somos",
-        "label": "Quem somos",
-      },
-      {
-        "href": "/termos-de-uso",
-        "label": "Termos de uso",
-      },
-      {
-        "href": "/trabalhe-conosco",
-        "label": "Trabalhe conosco",
-      },
-    ],
-  }, {
-    "label": "Atendimento",
-    "items": [
-      {
-        "href": "/centraldeatendimento",
-        "label": "Central de atendimento",
-      },
-      {
-        "href": "/whatsapp",
-        "label": "Fale conosco pelo WhatsApp",
-      },
-      {
-        "href": "/trocaedevolucao",
-        "label": "Troca e devolução",
-      },
-    ],
-  }],
+  sections = [],
   social = {
     title: "Redes sociais",
     items: [{ label: "Instagram", link: "/" }, { label: "Tiktok", link: "/" }],
   },
-  payments = {
-    title: "Formas de pagamento",
-    items: [{ label: "Mastercard" }, { label: "Visa" }, { label: "Pix" }],
-  },
+  payments,
   mobileApps = { apple: "/", android: "/" },
   regionOptions = { currency: [], language: [] },
   extraLinks = [],
@@ -223,18 +188,20 @@ function Footer({
           <div class="flex flex-col gap-10">
             <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
               {_logo}
-              {_sectionLinks}
-              {_newsletter}
+              {_social}
             </div>
-            <Divider />
+            {
+              /*
+<Divider />
             <div class="flex flex-col md:flex-row gap-10 md:gap-14 md:items-end">
               {_payments}
-              {_social}
               <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end">
                 {_apps}
                 {_region}
               </div>
             </div>
+            */
+            }
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
               <PoweredByDeco />

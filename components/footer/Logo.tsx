@@ -11,8 +11,8 @@ export default function Logo({ logo }: Props) {
   return (
     <>
       {logo?.image && (
-        <div class="flex flex-col gap-3">
-          <div class="w-28 max-h-16">
+        <div class="flex gap-3">
+          <div class="aspect-square min-w-[120px] w-[120px]">
             <img
               loading="lazy"
               src={logo?.image}
