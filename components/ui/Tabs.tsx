@@ -29,7 +29,7 @@ const Video = ({ link }: { link: string }) => {
       frameBorder={0}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
-      class="max-w-full w-full aspect-video"
+      class="max-w-full aspect-video"
     >
     </iframe>
   );
@@ -117,7 +117,7 @@ export default function Tabs({ tabs, variant }: Props) {
   const isVertical = variant === "vertical";
   return (
     <div
-      class={`flex ${isVertical ? "flex-row-reverse gap-2" : "flex-col gap-4"}`}
+      class={`flex ${isVertical ? "gap-2" : "flex-col gap-4"}`}
     >
       <div class={`tabs ${isVertical ? "flex-col justify-start" : ""}`}>
         {tabs.map(({ label }, index) => (
