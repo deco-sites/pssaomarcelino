@@ -112,6 +112,8 @@ export default function Tabs({ tabs, variant }: Props) {
 
   if (!tabs || tabs.length === 0) return null;
 
+  const hasNestedTabs = nestedTabs && nestedTabs.length > 0;
+
   const isVertical = variant === "vertical";
   return (
     <div
@@ -130,7 +132,7 @@ export default function Tabs({ tabs, variant }: Props) {
         ))}
       </div>
       <div class="w-full">
-        {content && !nestedTabs && <TabContent {...content} />}
+        {content && !hasNestedTabs && <TabContent {...content} />}
         {nestedTabs && (
           <Tabs
             // key to make the reconciler reset nested tab
