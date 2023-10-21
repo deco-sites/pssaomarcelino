@@ -64,6 +64,7 @@ const TabContent = (
   );
 };
 
+/** @title {{{label}}} */
 interface Tab {
   /** @title titulo da aba */
   label: string;
@@ -95,7 +96,7 @@ interface Tab {
 }
 
 export interface Props {
-  /** @title Aba - {{{label}}} */
+  /** @title Abas */
   tabs: Tab[];
   /**
    * @title Variante
